@@ -29,7 +29,7 @@
 
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 
 *{
     margin: 0px;
@@ -50,7 +50,7 @@ h1{
 .post-list li{
     padding: 10px;
     width: 100%;
-    border: 1px solid gray;
+    border: 1px solid $red;
 }
 
 </style>
