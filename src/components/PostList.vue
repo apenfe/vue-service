@@ -1,5 +1,5 @@
 <template>
-    <h1>Listado de posts</h1>
+    <h1>Listado de posts <button class="btn btn-primary">Estilado con bootstrap</button></h1>
     <ul class="post-list">
         <li v-for="post in posts" :key="post.id">
             {{ post.title }}
@@ -45,12 +45,17 @@ h1{
     height: 75px;
     padding: 20px;
     list-style: none;
-}
 
-.post-list li{
-    padding: 10px;
-    width: 100%;
-    border: 1px solid $red;
+    li{
+        padding: 10px;
+        width: 100%;
+        border: 1px solid $red;
+    }
+
+    li:hover{
+        background-color: darken(black, 10%);
+        color: white;
+    }
 }
 
 </style>
